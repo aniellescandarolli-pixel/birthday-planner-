@@ -2,7 +2,8 @@
 
 A Google ADK `LlmAgent` that helps track birthdays, suggest party ideas, and
 plan the party (checklist, budget, guest list). Data is persisted to local
-JSON files under `birthday_planner_agent/data/`.
+JSON files under `birthday_planner_agent/data/`. The agent runs on Claude
+(Anthropic) via ADK's `Claude` model wrapper.
 
 ## Setup
 
@@ -12,7 +13,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 cp birthday_planner_agent/.env.example birthday_planner_agent/.env
-# then edit birthday_planner_agent/.env and set GOOGLE_API_KEY
+# then edit birthday_planner_agent/.env and set ANTHROPIC_API_KEY
 ```
 
 ## Run
