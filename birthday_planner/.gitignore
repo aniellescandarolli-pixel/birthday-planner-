@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+birthday_planner_agent/data/*.json
