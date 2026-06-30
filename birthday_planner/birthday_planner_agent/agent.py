@@ -1,7 +1,7 @@
 """Birthday Planner agent definition (Google ADK)."""
 
 from google.adk.agents import LlmAgent
-from google.adk.models.anthropic_llm import Claude
+from google.adk.models.anthropic_llm import AnthropicLlm
 
 from .tools import (
     add_person,
@@ -14,7 +14,7 @@ from .tools import (
 
 root_agent = LlmAgent(
     name="BirthdayPlannerAgent",
-    model=Claude(model="claude-sonnet-4-6"),
+    model=AnthropicLlm(model="claude-sonnet-4-6"),
     description="Helps plan birthdays end-to-end: tracking dates, suggesting themes/gifts, and organizing the party.",
     instruction=(
         "You are a friendly and creative Birthday Planner assistant.\n"
